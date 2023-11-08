@@ -1,4 +1,4 @@
-//using CardMatchingGame.Model;
+using CardMatchingGame.Model;
 using CardMatchingGame.Presentation;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +27,7 @@ namespace CardMatchingGame.UI.View
         private void BackButtonClicked()
         {
             MenuToggle(false);
-            //UISceneReferenceHolder.GridHandlerView.MenuToggle(false);
+            UISceneReferenceHolder.GridHandlerView.MenuToggle(false);
             UISceneReferenceHolder.MainMenuView.MenuToggle(true);
         }
 
@@ -35,8 +35,8 @@ namespace CardMatchingGame.UI.View
         {
             // create a 4 cards layout
             PresentationSceneReferenceHolder.GridHandlerPresentation.SetGrid(_2x2LayoutAmount);
-            //GameRules.Rule = _2x2LayoutAmount;
-            //UISceneReferenceHolder.LevelRequestView.MenuToggle(true);
+            GameRules.Rule = _2x2LayoutAmount;
+            UISceneReferenceHolder.LevelRequestView.MenuToggle(true);
             MenuToggle(false);
         }
 
@@ -44,8 +44,8 @@ namespace CardMatchingGame.UI.View
         {
             // create a 6 cards layout
             PresentationSceneReferenceHolder.GridHandlerPresentation.SetGrid(_2x3LayoutAmount);
-            //GameRules.Rule = _2x3LayoutAmount;
-            //UISceneReferenceHolder.LevelRequestView.MenuToggle(true);
+            GameRules.Rule = _2x3LayoutAmount;
+            UISceneReferenceHolder.LevelRequestView.MenuToggle(true);
             MenuToggle(false);
         }
 
@@ -53,8 +53,8 @@ namespace CardMatchingGame.UI.View
         {
             // create a 30 cards layout
             PresentationSceneReferenceHolder.GridHandlerPresentation.SetGrid(_5x6LayoutAmount);
-            //GameRules.Rule = _5x6LayoutAmount;
-            //UISceneReferenceHolder.LevelRequestView.MenuToggle(true);
+            GameRules.Rule = _5x6LayoutAmount;
+            UISceneReferenceHolder.LevelRequestView.MenuToggle(true);
             MenuToggle(false);
         }
     }
