@@ -1,4 +1,4 @@
-//using CardMatchingGame.Model.DataPersistance;
+using CardMatchingGame.Model.DataPersistance;
 using CardMatchingGame.Presentation;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,13 +24,13 @@ namespace CardMatchingGame.UI.View
         {
             UISceneReferenceHolder.GridSelectionMenuView.MenuToggle(false);
             MenuToggle(false);
-            //UISceneReferenceHolder.GridHandlerView.MenuToggle(true);
-            //DataPersistenceManager.instance.FakeOnSceneLoaded(true);
+            UISceneReferenceHolder.GridHandlerView.MenuToggle(true);
+            DataPersistenceManager.instance.FakeOnSceneLoaded(true);
         }
 
         private void NewGameClicked()
         {
-            //DataPersistenceManager.instance.NewGame();
+            DataPersistenceManager.instance.NewGame();
             UISceneReferenceHolder.GridSelectionMenuView.MenuToggle(true);
             MenuToggle(false);
         }
